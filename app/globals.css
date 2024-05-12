@@ -31,3 +31,13 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .feat-seperator-top {
+    @apply before:border-b-[5vh] before:block before:border-l-[100vw] before:border-l-transparent before:border-b-indigo-400 before:h-0 before:left-0 before:right-0 before:bottom-full before:w-0 before:absolute;
+  }
+
+  .feat-seperator-bottom {
+    @apply after:border-b-[5vh] after:block after:border-l-[100vw] after:border-l-transparent after:border-b-indigo-400 after:h-0 after:left-0 after:right-0 after:bottom-full after:w-0 after:absolute;
+  }
+}

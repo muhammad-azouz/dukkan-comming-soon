@@ -48,7 +48,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-white mt-10 py-24 sm:py-32 bg-gradient-to-b top-[-100px] from-indigo-400 to-blue-400 relative before:border-b-[5vh] before:block before:border-l-[100vw] before:border-l-transparent before:border-b-indigo-400 before:h-0 before:left-0 before:right-0 before:bottom-full before:w-0 before:absolute">
+    <div className="bg-white mt-10 pt-24 sm:pt-32 bg-gradient-to-b top-[-100px] from-indigo-400 to-blue-400 relative feat-seperator-top ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
@@ -64,7 +64,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="relative pr-16">
                 <dt className="text-base font-semibold leading-7 text-gray-100">
-                  <div className="absolute right-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="absolute right-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                     <feature.icon
                       strokeWidth={1.5}
                       className="h-7 w-7 text-white"
@@ -85,6 +85,10 @@ export default function Features() {
           </dl>
         </div>
       </div>
+      <div
+        className="bg-featBottom bg-white h-[140px] bg-no-repeat bg-contain"
+        style={{ backgroundPositionY: "-2px" }}
+      />
     </div>
   );
 }
