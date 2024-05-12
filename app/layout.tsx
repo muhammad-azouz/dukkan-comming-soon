@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dukaan App",
-  description: "Control your trade smoothly",
+  title: "تطبيق دكان",
+  description:
+    "قم بتحسين مبيعاتك ومعالجة المدفوعات في عملك باستخدام تطبيق دوكان",
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body className={inter.className}>{children}</body>
     </html>
   );
