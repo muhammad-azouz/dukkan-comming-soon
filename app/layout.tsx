@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Sans_Arabic, Tajawal } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+// const ibmPlex = IBM_Plex_Sans_Arabic({
+//   subsets: ["arabic", "latin"],
+//   display: "swap",
+//   weight: "400",
+// });
+
+const tajawal = Tajawal({
+  subsets: ["latin", "arabic"],
+  display: "swap",
+  weight: "700",
+});
 
 export const metadata: Metadata = {
   title: "تطبيق دكان",
@@ -17,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={inter.className}>{children}</body>
+      <body className={tajawal.className}>{children}</body>
     </html>
   );
 }
