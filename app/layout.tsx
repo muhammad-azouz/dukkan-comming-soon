@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans_Arabic, Tajawal } from "next/font/google";
+import { Tajawal } from "next/font/google";
 import "./globals.css";
 
 // const ibmPlex = IBM_Plex_Sans_Arabic({
